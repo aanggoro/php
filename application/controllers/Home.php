@@ -11,8 +11,13 @@ class Home extends CI_Controller{
 
   public function index()
   {
+    $data = array(
+      'nama' => 'anggoro',
+      'status' => 'mahasiswa'
+    );
+
     $this->header();
-    $this->load->view('index');
+    $this->load->view('index', $data);
     $this->footer();
   }
 
