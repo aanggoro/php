@@ -11,12 +11,29 @@ class Home extends CI_Controller{
 
   public function index()
   {
-    echo "Selamat datang di codeigniter";
+    $this->header();
+    $this->load->view('index');
+    $this->footer();
   }
 
   public function halamanprofil()
   {
     echo "Ini adalah halaman profil";
+  }
+
+  public function controllerNama($value='')
+  {
+    echo "nama saya ".$value;
+  }
+
+  public function header()
+  {
+    $this->load->view('header');
+  }
+
+  public function footer()
+  {
+    $this->load->view('footer');
   }
 
 }
