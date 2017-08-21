@@ -14,7 +14,7 @@ class Home extends CI_Controller{
     echo "Selamat datang di codeigniter";
   }
 
-  public function profil()
+  public function halamanprofil()
   {
     echo "Ini adalah halaman profil";
   }
