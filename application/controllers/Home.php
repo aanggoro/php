@@ -7,13 +7,14 @@ class Home extends CI_Controller{
   {
     parent::__construct();
     //Codeigniter : Write Less Do More
+    $this->load->library('encryption');
   }
 
   public function index()
   {
     $data = array(
       'nama' => 'anggoro',
-      'status' => 'mahasiswa'
+      'status' => 'mahasiswasuod'
     );
 
     $this->header();
